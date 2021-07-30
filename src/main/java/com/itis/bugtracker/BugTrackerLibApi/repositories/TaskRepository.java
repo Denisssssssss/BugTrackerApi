@@ -11,18 +11,7 @@ import java.util.List;
 @Repository
 public interface TaskRepository extends JpaRepository<Task, Long> {
 
-//    @Query(nativeQuery = true,
-//            value = "select * " +
-//                    "from task as t" +
-//                    "where ((:title is null) or upper(t.title) like upper(concat('%', :title, '%'))) " +
-//                    "   and ((:description is null) or upper(t.description) like upper(concat('%', :description, '%'))) " +
-//                    "   and (:type is null or t.type = cast(:type as text)) " +
-//                    "   and (:status is null or t.status = cast(:status as text)) " +
-//                    "   and (:author is null or t.author_id = :author) " +
-//                    "   and (:executor is null or t.executor_id = :executor) " +
-//                    "   and (:number is null or t.id = :number) " +
-//                    "order by last_modified desc")
-@Query(nativeQuery = true,
+    @Query(nativeQuery = true,
         value = "select * " +
                 "from task as t " +
                 "where ((:title is null) or upper(t.title) like upper(concat('%', :title, '%'))) " +

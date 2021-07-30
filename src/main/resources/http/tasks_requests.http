@@ -117,9 +117,9 @@ Access:
 GET localhost/tasks?r=true
 Access:
 
-### Поиск задач по параметрам (номер, название, описание, тип, статус, автор, исполнитель). Параметр r - для случайной сортировки
+### Поиск задач по параметрам (номер(n), название(h), описание(d), тип(t), статус(s), автор(author), исполнитель(exec)). Параметр r - для случайной сортировки
 
-GET localhost/tasks/search?r=true&exec=densh2001
+GET localhost/tasks/search?r=true&exec=developer
 Access:
 
 ###
