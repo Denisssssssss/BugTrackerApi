@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterBefore(tokenAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers("/signIn").permitAll()
-                .antMatchers("signUp").permitAll()
+                .antMatchers("/signUp").permitAll()
                 .antMatchers("/reset/credentials/**").hasAuthority("MANAGER")
                 .antMatchers("/reset/role/**").hasAuthority("MANAGER")
                 .antMatchers("/reset").permitAll()

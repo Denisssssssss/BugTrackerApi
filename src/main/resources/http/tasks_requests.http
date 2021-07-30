@@ -10,7 +10,7 @@ Access:
   "title": "f0001"
 }
 
-###
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
 
 POST localhost/tasks/add
 Content-Type: application/json
@@ -22,7 +22,7 @@ Access:
   "title": "f0002"
 }
 
-###
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
 
 POST localhost/tasks/add
 Content-Type: application/json
@@ -34,7 +34,7 @@ Access:
   "title": "f0003"
 }
 
-###
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
 
 POST localhost/tasks/add
 Content-Type: application/json
@@ -50,7 +50,7 @@ Access:
   ]
 }
 
-###
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
 
 POST localhost/tasks/add
 Content-Type: application/json
