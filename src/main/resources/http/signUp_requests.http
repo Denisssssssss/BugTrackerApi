@@ -1,0 +1,9 @@
+### Возвращает access токен для доступа на защищенные ресурсы
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "123"
+}

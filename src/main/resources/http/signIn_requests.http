@@ -1,0 +1,39 @@
+### Возвращает access токен для доступа на защищенные ресурсы
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "manager",
+  "password": "123"
+}
+
+### Возвращает access токен для доступа на защищенные ресурсы
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "teamlead",
+  "password": "123"
+}
+
+### Возвращает access токен для доступа на защищенные ресурсы
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "developer",
+  "password": "123"
+}
+
+### Возвращает access токен для доступа на защищенные ресурсы
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "testengineer",
+  "password": "123"
+}

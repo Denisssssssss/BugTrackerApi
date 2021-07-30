@@ -1,0 +1,125 @@
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0001"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0002"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0003"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0004",
+  "blocks": [
+    1,
+    2
+  ]
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0004",
+  "blocks": [
+    3
+  ]
+}
+
+### Добавление задачи, blocks - список id (номеров) задач, которе она блокирует
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access:
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0005"
+}
+
+### Добавление списка задач, которые блокируются. Параметр id - id (номер) задачи. Blocks - список номеров задач, которые будут блокироваться
+
+PUT localhost/tasks/refactor/blocks/5
+Content-Type: application/json
+Access:
+
+{
+  "blocks": [
+    1
+  ]
+}
+
+### Изменение статуса и исполнителя задачи. Параметр task - номер задачи, exec - id исполнителя, status - статус задачи
+
+PUT localhost/tasks/refactor/state?task=5&exec=3&status=IN_PROGRESS
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NjQyMjc2LCJleHAiOjE2Mjc2NTIyNzZ9._JSzrJwWYVfSZVc0McRqlqOqE0tAU6VgxCY8JkBeWxk
+
+### Изменение данных задачи (тип, приоритет, название, описание)
+
+PUT localhost/tasks/refactor/info/1
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc1NzM1Njl9.b_1boFLAlHK0rJxx5OXy5N7ehPGZ3AqrCPo70nzckK8
+
+{
+  "type": "BUG",
+  "priority": "CRITICAL",
+  "title": "b0001",
+  "description": "descr"
+}
+
+### Удаление задачи по ее номеру. Только для менеджера
+
+DELETE localhost/tasks/delete/4
+Access:
+
+### Получение списка всех задач. Параметр r - для случайной сортировки
+
+GET localhost/tasks?r=true
+Access:
+
+### Поиск задач по параметрам (номер, название, описание, тип, статус, автор, исполнитель). Параметр r - для случайной сортировки
+
+GET localhost/tasks/search?r=true&exec=densh2001
+Access:
+
+###

@@ -1,0 +1,4 @@
+### Запрос на список изменений задач, параметр id - id (номер) задачи
+
+GET localhost/changelist
+Access:

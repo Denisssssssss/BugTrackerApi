@@ -1,0 +1,31 @@
+### Изменение пароля
+
+PUT localhost/reset
+Content-Type: application/json
+
+{
+  "username": "manager",
+  "oldPassword": "123",
+  "newPassword": "123"
+}
+
+### Изменение данных для авторазации пользователю с заданным id
+
+PUT localhost/reset/credentials/4
+Content-Type: application/json
+Access:
+
+{
+  "username": "manager1",
+  "password": "123"
+}
+
+### Смена роли пользователю по его id
+
+PUT localhost/reset/role/4
+Content-Type: application/json
+Access:
+
+{
+  "role": "MANAGER"
+}

@@ -1,0 +1,166 @@
+POST http://localhost/signUp
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "123"
+}
+
+###
+
+POST localhost/signIn
+Content-Type: application/json
+
+{
+  "username": "manager",
+  "password": "123"
+}
+
+###
+
+GET localhost/tasks?r=true
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTgxNzIzLCJleHAiOjE2Mjc1OTE3MjN9.4gkNAGOHnb_FTXNlcFNL675XJVPcZcnbBor5GzcXjm8
+
+###
+
+GET localhost/tasks/search?r=true&exec=densh2001
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTgxNzIzLCJleHAiOjE2Mjc1OTE3MjN9.4gkNAGOHnb_FTXNlcFNL675XJVPcZcnbBor5GzcXjm8
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTc1ODQwLCJleHAiOjE2Mjc1ODU4NDB9.sZYpoLjFjPlf1tmaWfXd0GktaFlb0us5U1z5IAnMldk
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0001"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTc1ODQwLCJleHAiOjE2Mjc1ODU4NDB9.sZYpoLjFjPlf1tmaWfXd0GktaFlb0us5U1z5IAnMldk
+
+{
+  "type": "BUG",
+  "status": "TODO",
+  "title": "b0001"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTc1ODQwLCJleHAiOjE2Mjc1ODU4NDB9.sZYpoLjFjPlf1tmaWfXd0GktaFlb0us5U1z5IAnMldk
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0002"
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTc1ODQwLCJleHAiOjE2Mjc1ODU4NDB9.sZYpoLjFjPlf1tmaWfXd0GktaFlb0us5U1z5IAnMldk
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0003",
+  "blocks": [
+    1,
+    2
+  ]
+}
+
+###
+
+POST localhost/tasks/add
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTc1ODQwLCJleHAiOjE2Mjc1ODU4NDB9.sZYpoLjFjPlf1tmaWfXd0GktaFlb0us5U1z5IAnMldk
+
+{
+  "type": "TASK",
+  "status": "TODO",
+  "title": "f0004",
+  "blocks": [
+    3
+  ]
+}
+
+###
+
+DELETE localhost/tasks/delete/3
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NjQ4MzQ3LCJleHAiOjE2Mjc2NTgzNDd9.hizL5im4dt2ChiGxrcFhT4R5A5Pdcwjz4Q2G-z3DTP8
+
+###
+
+PUT localhost/tasks/refactor/blocks/5
+Content-Type: application/json
+Access:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc1NzM1Njl9.b_1boFLAlHK0rJxx5OXy5N7ehPGZ3AqrCPo70nzckK8
+
+{
+  "blocks": [
+    4
+  ]
+}
+
+###
+
+PUT localhost/tasks/refactor/state?task=5&exec=3&status=IN_PROGRESS
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NjQyMjc2LCJleHAiOjE2Mjc2NTIyNzZ9._JSzrJwWYVfSZVc0McRqlqOqE0tAU6VgxCY8JkBeWxk
+
+###
+
+PUT localhost/tasks/refactor/info/1
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc1NzM1Njl9.b_1boFLAlHK0rJxx5OXy5N7ehPGZ3AqrCPo70nzckK8
+
+{
+  "type": "BUG",
+  "priority": "CRITICAL",
+  "title": "b0001",
+  "description": "descr"
+}
+
+###
+
+GET localhost/changelist
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc1NzM1Njl9.b_1boFLAlHK0rJxx5OXy5N7ehPGZ3AqrCPo70nzckK8
+
+###
+
+PUT localhost/reset/credentials/1
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NTgyNTk2LCJleHAiOjE2Mjc1OTI1OTZ9.eZ6fRcX-4sB5sDLrGJWGBSsx9-uhS7_YYs6QvDRL3Zk
+
+{
+  "username": "densh2001",
+  "password": "123"
+}
+
+###
+
+PUT localhost/reset
+Content-Type: application/json
+
+{
+  "username": "manager",
+  "oldPassword": "123",
+  "newPassword": "123"
+}
+
+###
+
+PUT localhost/reset/role/1
+Content-Type: application/json
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NjQyMjc2LCJleHAiOjE2Mjc2NTIyNzZ9._JSzrJwWYVfSZVc0McRqlqOqE0tAU6VgxCY8JkBeWxk
+
+{
+  "role": "MANAGER"
+}
