@@ -1,9 +1,9 @@
 package com.itis.bugtracker.services;
 
 
-import com.itis.bugtracker.BugTrackerLibApi.services.UserService;
-import com.itis.bugtracker.BugTrackerLibImpl.models.data.Task;
-import com.itis.bugtracker.BugTrackerLibImpl.models.data.User;
+import com.itis.bugtracker.api.services.UserService;
+import com.itis.bugtracker.impl.models.data.Task;
+import com.itis.bugtracker.impl.models.data.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

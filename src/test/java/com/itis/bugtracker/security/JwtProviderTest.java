@@ -1,6 +1,6 @@
 package com.itis.bugtracker.security;
 
-import com.itis.bugtracker.BugTrackerLibApi.security.token.TokenProvider;
+import com.itis.bugtracker.api.security.token.TokenProvider;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.junit.Assert;

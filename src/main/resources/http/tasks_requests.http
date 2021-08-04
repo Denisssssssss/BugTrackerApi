@@ -2,7 +2,7 @@
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -14,7 +14,7 @@ Access:
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -26,7 +26,7 @@ Access:
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -38,7 +38,7 @@ Access:
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -54,7 +54,7 @@ Access:
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -69,7 +69,7 @@ Access:
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 {
   "type": "TASK",
@@ -110,12 +110,12 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc
 ### Удаление задачи по ее номеру. Только для менеджера
 
 DELETE localhost/tasks/delete/4
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 ### Получение списка всех задач. Параметр r - для случайной сортировки
 
 GET localhost/tasks?r=true
-Access:
+Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
 
 ### Поиск задач по параметрам (номер(n), название(h), описание(d), тип(t), статус(s), автор(author), исполнитель(exec)). Параметр r - для случайной сортировки
 
