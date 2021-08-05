@@ -138,7 +138,7 @@ public class TaskServiceImpl implements TaskService {
             executor.getTakenTasks().remove(task);
             userRepository.save(executor);
         }
-        userRepository.save(executor);
+        userRepository.save(user);
     }
 
     private boolean validate(Task.Status status, User executor) {

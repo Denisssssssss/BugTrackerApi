@@ -2,7 +2,7 @@
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -14,7 +14,7 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2Mjg
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -26,7 +26,7 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2Mjg
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -38,7 +38,7 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2Mjg
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -54,7 +54,7 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2Mjg
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -69,7 +69,7 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2Mjg
 
 POST localhost/tasks/add
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 {
   "type": "TASK",
@@ -91,14 +91,14 @@ Access:
 
 ### Изменение статуса и исполнителя задачи. Параметр task - номер задачи, exec - id исполнителя, status - статус задачи
 
-PUT localhost/tasks/refactor/state?task=5&exec=3&status=IN_PROGRESS
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjI3NjQyMjc2LCJleHAiOjE2Mjc2NTIyNzZ9._JSzrJwWYVfSZVc0McRqlqOqE0tAU6VgxCY8JkBeWxk
+PUT localhost/tasks/refactor/state?task=5&exec=developer&status=IN_PROGRESS
+Access:
 
 ### Изменение данных задачи (тип, приоритет, название, описание)
 
 PUT localhost/tasks/refactor/info/1
 Content-Type: application/json
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc1NzM1Njl9.b_1boFLAlHK0rJxx5OXy5N7ehPGZ3AqrCPo70nzckK8
+Access:
 
 {
   "type": "BUG",
@@ -110,12 +110,12 @@ Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI3NTYzNTY5LCJleHAiOjE2Mjc
 ### Удаление задачи по ее номеру. Только для менеджера
 
 DELETE localhost/tasks/delete/4
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+Access:
 
 ### Получение списка всех задач. Параметр r - для случайной сортировки
 
-GET localhost/tasks?r=true
-Access: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjI4MTE3NjIzLCJleHAiOjE2MjgxMjc2MjN9.X7usGc1I6BLXscLQm49X-y0j5LXJgrxaEo96GZB35ak
+GET localhost/tasks
+Access:
 
 ### Поиск задач по параметрам (номер(n), название(h), описание(d), тип(t), статус(s), автор(author), исполнитель(exec)). Параметр r - для случайной сортировки
 

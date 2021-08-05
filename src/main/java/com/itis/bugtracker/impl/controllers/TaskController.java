@@ -50,7 +50,7 @@ public class TaskController {
             response = TaskBody.class)
     @ApiResponse(code = 200, message = "Returns list of tasks")
     @GetMapping
-    public ResponseEntity<List<TaskBody>> getTasks(@RequestParam("r") Boolean random) {
+    public ResponseEntity<List<TaskBody>> getTasks(@RequestParam(value = "r", required = false, defaultValue = "false") Boolean random) {
         List<Task> tasks = taskService.findAll();
         if (random) {
             Collections.shuffle(tasks);
@@ -204,7 +204,7 @@ public class TaskController {
     @PutMapping("/refactor/state")
     public ResponseEntity<TaskBody> setState(@RequestParam(value = "task") Long taskId,
                                              @RequestParam(value = "exec", required = false)
-                                                     Long executorId,
+                                                     String executor,
                                              @RequestParam(value = "status", required = false)
                                                      String s) {
 
@@ -212,11 +212,9 @@ public class TaskController {
         if (!task.getBlockedBy().isEmpty()) {
             return ResponseEntity.badRequest().build();
         }
-        User user;
-        if (executorId == null) {
+        User user = userService.findByUsername(executor);
+        if (user == null) {
             user = task.getExecutor();
-        } else {
-            user = userService.findById(executorId);
         }
         Task.Status status;
         if (s == null) {
