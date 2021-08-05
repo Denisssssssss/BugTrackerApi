@@ -38,7 +38,7 @@ public class Task {
     }
 
     public enum Priority {
-        LOW, MEDIUM, CRITICAL
+        LOW, MEDIUM, HIGH, CRITICAL
     }
 
     private String title;
